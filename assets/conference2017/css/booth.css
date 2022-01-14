@@ -1,0 +1,329 @@
+/* guide
+==================================*/
+.guide {padding:30px 0; background: #f5f5f5; width: 100%;transition: all  0.2s ease;}
+
+.guide nav {display: flex; justify-content: space-between; }
+.guide a {font-size: 14px; font-weight: 700;}
+.guide a:hover {color: #FF2500;}
+
+/* fixed */
+.guide.fixed {position: fixed; top:0; left: 0; padding:1em 0; z-index: 10;}
+
+
+@media screen and (max-width: 767px) {
+	.guide {display: none;}
+}
+
+@media screen and (min-width:768px) and ( max-width:1119px) {
+	.guide {padding:30px 3%; width: 94%; }
+	.guide.fixed {padding:1em 3%;}
+}
+
+/*==================================
+common
+==================================*/
+/* section */
+section[id^="sec"] {border-bottom: 1px dashed rgba(0,0,0,0.2);}
+section[id^="sec"] h2 {font-family: 'Noto Sans Japanese', "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;font-kerning: auto;}
+.ready {display: flex; justify-content: center; align-items: center; height: 4em; background: #f5f5f5; color: #AAA;font-family: 'Noto Sans Japanese'; font-size: 20px;line-height: 1.3em;  font-weight: 100; }
+
+
+@media screen and (max-width: 767px) {
+	section[id^="sec"] h2 br {display: none;}
+
+	.ready {height: 3em;  font-size: 15px; padding:0.5em;}
+}
+
+/*==================================
+sec1
+==================================*/
+#sec1 {padding:90px 0;}
+#sec1 h2 {font-size: 40px; font-weight: 700; text-align: center; line-height: 1.5em; margin-bottom: 40px;}
+#sec1 h2 + p {text-align: center; margin-bottom: 5em; font-size: 20px;}
+
+
+@media screen and (max-width: 767px) {
+	#sec1 {padding:10% 3%;}
+	#sec1 h2 {font-size: 20px;margin-bottom: 1em;}
+
+	#sec1 h2 + p {font-size: 14px;}
+
+}
+
+
+/*==================================
+sec2 (SPEAKERS)
+==================================*/
+#sec2 {padding:90px 0;}
+#sec2 h2 {font-size: 40px; font-weight: 700; text-align: center; line-height: 1.5em; margin-bottom: 40px;}
+#sec2 h2 + p {text-align: center; margin-bottom: 40px;}
+
+/* grid */
+#sec2 .grids {display: flex; flex-wrap: wrap; align-items: stretch;}
+#sec2 .grid {flex-basis: 23%;margin-right: 2.5%; text-align: center; margin-bottom: 50px;}
+#sec2 .grid:nth-of-type(4n) {margin-right: 0;}
+
+#sec2 .grid a { outline: none;}
+
+#sec2 .grid img {max-width: 100%; height: auto; margin-bottom: 10px;}
+#sec2 .grid .name {display: block; font-size: 16px; font-weight: 700; margin-bottom: 0.5em;}
+#sec2 .grid p {font-size: 14px; }
+
+/**/
+#sec2 .grids.first {justify-content: center;}
+/*#sec2 .grids.first .grid {margin:0 12% 50px;}*/
+
+/* box */
+.lightbox {max-width: 700px; width: 700px; background: #FFF; display: flex; padding:4%; border-radius: 5px; justify-content: space-between;}
+.lightbox figure {flex-basis: 30%;}
+.lightbox figure img {max-width: 100%; height: auto;}
+.lightbox .padder {display: inline-block; vertical-align: top; flex-basis: 66%;}
+.lightbox .name {font-size: 16px; font-weight: 700;}
+.lightbox hr {border-bottom: 0px dashed #CCC; border-width: 0 0 1px }
+
+.lightbox p {font-size: 13px;}
+.lightbox .title {font-size: 13px; font-weight: 700; display: block; margin: 1em 0 0;}
+.lightbox .wrap-vertical {max-height:400px; overflow-y: auto;}
+
+.wrap-vertical::-webkit-scrollbar{width:5px;background:#eee}
+.wrap-vertical::-webkit-scrollbar:vertical{width:5px;background:#eee}
+.wrap-vertical::-webkit-scrollbar-thumb{background:#eee;border-radius:2px}
+.wrap-vertical::-webkit-scrollbar-thumb:vertical{background:#999;border-radius:2px}
+.wrap-vertical::-webkit-scrollbar-track-piece:start{background:#eee}
+.wrap-vertical::-webkit-scrollbar-track-piece:end{background:#eee}
+.wrap-vertical::-webkit-scrollbar-corner{background:0 0}
+
+
+/**/
+#sec2 .note {background: #f5f5f5; text-align: center; padding:1em 0;}
+
+#sec2 .off {display: none;}
+
+@media screen and (max-width: 767px) {
+	#sec2 {padding:10% 3%;}
+	#sec2 h2 {font-size: 20px; margin-bottom: 2em;}
+
+	/* grid */
+	#sec2 .grids {display: flex; justify-content: space-between;}
+	#sec2 .grid {flex-basis: 46%;margin-right: 0;  margin-bottom: 2rem;}
+
+/**/
+#sec2 .grids.first {justify-content: space-between;}
+/*#sec2 .grids.first .grid {margin:0 0 2rem;}*/
+
+	/* box */
+	.lightbox {max-width: 90%; width: 90%; margin:auto;}
+	.lightbox figure {flex-basis: 30%;}
+	.lightbox .padder {flex-basis: 66%; padding-left: 2%;}
+	.lightbox .name + p:nth-of-type(1){font-size: 11px;}
+	.lightbox p {font-size: 12px;}
+}
+
+@media screen and (min-width:768px) and ( max-width:1119px) {
+	#sec2 {padding:10% 3%;}
+}
+
+
+
+/*==================================
+sec3
+==================================*/
+#sec3 {padding:90px 0;}
+#sec3 h2 {font-size: 40px; font-weight: 700; text-align: center; line-height: 1.5em; margin-bottom: 40px;}
+#sec3 h2 + p {text-align: center; margin-bottom: 10px; font-size: 20px;}
+#sec3 p.note {font-size: 14px; text-align: center; margin-bottom: 40px;}
+
+/* right */
+#sec3 h3 {font-size: 20px; color: #444; margin-bottom: 1em; line-height: 1.5em;}
+#sec3 h3 i {margin-right: 0.5em;}
+#sec3 h4 {font-size: 16px; margin-bottom:1em; font-weight: 700}
+
+/**/
+#sec3 .grids {display: flex; flex-wrap: wrap; align-items: stretch;}
+#sec3 .grid {flex-basis: 47%; margin-right: 3%; margin-bottom: 2rem;background: #f5f5f5; box-sizing: border-box; padding:1em;}
+#sec3 .grid:nth-of-type(2n) {margin-right: 0;}
+
+/* session */
+#sec3 .padder {padding:30px;background: #f5f5f5; height: auto;}
+#sec3 h3 {font-size: 20px; margin-bottom: 2em; font-weight: 700;}
+#sec3 .padder small {font-size: 11px;}
+#sec3 .padder p {font-size: 13px; margin-bottom: 2em;}
+
+/* The speaker */
+#sec3 .content p + .title {margin-top: 1em;}
+#sec3 .title {font-size: 14px; font-weight: 700; display: block;margin-bottom: 0.5em;}
+#sec3 ul.speakers {margin-bottom: 1em;}
+#sec3 ul.speakers:nth-last-of-type(1) {margin-bottom: 0;}
+#sec3 .speakers li {font-size: 13px; line-height: 1.7em;}
+
+
+
+@media screen and (max-width: 767px) {
+	#sec3 {padding:10% 3%;}
+	#sec3 h2 {font-size: 20px;margin-bottom: 1em;}
+
+	#sec3 h2 + p {font-size: 14px;}
+
+	#sec3 p.note {font-size: 11px;}
+
+	/* sub section */
+	#sec3 .child .content {flex-basis: 83%; }
+
+	/* left */
+	#sec3 .child .timeline .term {font-size: 13px; }
+
+	/* right */
+	#sec3 .child h3 {font-size: 16px; }
+
+	/**/
+	#sec3 .grids {display: flex; }
+	#sec3 .grid {flex-basis: 100%; margin-right: 0%; margin-bottom: 1rem;}
+	#sec3 .grid:nth-of-type(2n) {margin-right: 0;}
+
+	/* session */
+	#sec3 .padder {padding:1em;}
+	#sec3 h3 {font-size: 16px; margin-bottom: 2em;  }
+}
+
+@media screen and (min-width:768px) and ( max-width:1119px) {
+	#sec3 {padding:10% 3%;}
+	#sec3 .padder {height: auto; padding:1rem;}
+}
+
+
+
+
+/*==================================
+sec4-1
+==================================*/
+#sec4-1 {padding:90px 0;}
+#sec4-1 h2 {font-size: 40px; font-weight: 700; text-align: center; line-height: 1.5em; margin-bottom: 40px;}
+#sec4-1 h2 + p {text-align: center; margin-bottom: 60px;}
+
+/* grid */
+#sec4-1 .row {display: flex; justify-content: space-between; border-bottom: 1px dashed #CCC; margin-bottom: 5em; padding-bottom: 3em;}
+#sec4-1 .row dt {flex-basis: 20%; font-size: 20px; font-weight: 700;}
+#sec4-1 .row dd.grids {flex-basis: 78%; display: flex; flex-wrap: wrap; align-items: stretch;}
+
+#sec4-1 .row dd.grids .grid {box-sizing: border-box; padding:2%; /*border:1px solid #e5e5e5;*/margin-bottom: 2em;}
+
+#sec4-1 .row dd .grid:hover {box-shadow: 0 0 0 1px rgba(0,0,0,0.2);}
+#sec4-1 .row dd .grid a {display: block; width: 100%; height: 100%;}
+#sec4-1 .row dd .grid a img:hover {opacity: 1;}
+
+#sec4-1 .row dd .grid figure {display: flex; height: 200px; align-items: center;margin-bottom: 10px;}
+#sec4-1 .row dd .grid img {width: 100%; height: auto; }
+#sec4-1 .row dd .grid .name {font-weight: 700; font-size: 15px; }
+
+#sec4-1 .row dd .off {display: none;}
+#sec4-1 .row dd .grid figure.noimage {justify-content: center;}
+#sec4-1 .row dd .grid figure.noimage figcaption {color: #000; font-weight: 700; font-family: inherit;font-size: 1.1em;}
+#sec4-1 .row dd .grid figure.noimage + .name {display: none;}
+
+/* half */
+#sec4-1 .row dd.grids.half .grid {flex-basis: 48%; margin-right: 3%; }
+#sec4-1 .row dd.grids.half .grid:nth-of-type(2n) {margin-right: 0;}
+
+/* one tihrd */
+#sec4-1 .row dd.grids.third .grid {flex-basis: 31%; margin-right: 3%; }
+#sec4-1 .row dd.grids.third .grid:nth-of-type(3n) {margin-right: 0;}
+#sec4-1 .row dd.grids.third figure {display: flex; height: 120px; align-items: center;margin-bottom: 10px;}
+
+/* one fourth */
+#sec4-1 .row dd.grids.fourth .grid {flex-basis: 22.7%; margin-right: 3%; }
+#sec4-1 .row dd.grids.fourth .grid:nth-of-type(4n) {margin-right: 0;}
+#sec4-1 .row dd.grids.fourth figure {display: flex; height: 100px; align-items: center;margin-bottom: 10px;}
+
+@media screen and (max-width: 767px) {
+	#sec4-1 {padding:10% 3%;}
+
+	#sec4-1 h2 {font-size: 20px; margin-bottom: 1em;}
+	#sec4-1 h2 + p {margin-bottom: 2em;}
+
+	/* grid */
+	#sec4-1 .row {display: flex; flex-direction: column; margin-bottom: 2em; padding-bottom: 1em;}
+	#sec4-1 .row dt {flex-basis: auto; font-size: 20px; margin-bottom: 1em;}
+	#sec4-1 .row dd.grids {flex-basis: auto; display: flex; flex-wrap: wrap; align-items: stretch;}
+
+	#sec4-1 .row dd.grids .grid {box-sizing: border-box; padding:2%; border:1px solid #e5e5e5;margin-bottom: 2em;}
+	#sec4-1 .row dd .grid figure {display: flex; height: 100px; align-items: center;margin-bottom: 10px;}
+	#sec4-1 .row dd .grid img {width: 100%; height: auto; }
+	#sec4-1 .row dd .grid .name {font-weight: 700; font-size: 15px; }
+
+	/* half */
+	#sec4-1 .row dd.grids.half .grid {flex-basis: 48%; margin-right: 3%; }
+	#sec4-1 .row dd.grids.half .grid:nth-of-type(2n) {margin-right: 0;}
+
+	/* one tihrd */
+	#sec4-1 .row dd.grids.third .grid {flex-basis: 48%; margin-right: 3%; }
+	#sec4-1 .row dd.grids.third .grid:nth-of-type(3n) {margin-right: 3%;}
+	#sec4-1 .row dd.grids.third .grid:nth-of-type(2n) {margin-right: 0;}
+	#sec4-1 .row dd.grids.third figure {display: flex; height: 100px;}
+
+	/* one fourth */
+	#sec4-1 .row dd.grids.fourth .grid {flex-basis: 48%; margin-right: 3%; }
+	#sec4-1 .row dd.grids.fourth .grid:nth-of-type(2n) {margin-right: 0;}
+
+
+}
+
+@media screen and (min-width:768px) and ( max-width:1119px) {
+	#sec4-1 {padding:10% 3%;}
+}
+
+
+
+
+/*==================================
+ticket
+==================================*/
+#sec4 {padding:90px 0;}
+#sec4 h2 {font-size: 40px; font-weight: 700; text-align: center; line-height: 1.5em; margin-bottom: 40px;}
+#sec4 h2 + p {text-align: center; margin-bottom: 60px; font-size: 20px;}
+
+
+/* slider */
+#sec4 figure {height: 160px; display: flex; align-items: center; border:1px solid #CCC; box-sizing: border-box; justify-content: center; margin-bottom: 1em;}
+#sec4 figure:hover {border-color: #ff2500;}
+#sec4 img {max-width:90%; height: auto; backface-visibility: hidden;}
+
+#sec4 .slider .name {font-size: 13px; font-weight: 700; display: block; margin-bottom: 0.5em; line-height: 1.5em;}
+#sec4 .slider p {font-size: 12px;}
+#sec4 .slider .sp-buttons {margin-top: 2em;}
+
+#sec4 figure.noimage {justify-content: center;}
+#sec4 figure.noimage figcaption {color: #000; font-weight: 700; font-family: inherit;font-size: 1.1em; height: 80px; display: flex; align-items: center; justify-content: center; background: #f5f5f5; flex-basis: 90%; margin:auto;}
+#sec4 figure.noimage + .name {display: none;}
+
+@media screen and (max-width: 767px) {
+	#sec4 {padding:10% 3%;}
+	#sec4 h2 {font-size: 20px;margin-bottom: 1em;}
+/*	#sec4 .sp-slide {width: 100% !important;}*/
+}
+
+
+/*==================================
+ticket
+==================================*/
+#sec3-2 {padding:90px 0;}
+#sec3-2 h2 {font-size: 40px; font-weight: 700; text-align: center; line-height: 1.5em; margin-bottom: 40px;}
+
+#sec3-2 h2 + p {margin-bottom: 2em; font-weight: 700; font-size: 18px;}
+
+#sec3-2 ul {line-height: 1.5em; margin-bottom: 2em;}
+#sec3-2 ul li{text-indent: -1em; padding-left: 1em; margin-bottom: 0.5em;}
+#sec3-2 a {text-decoration: underline;}
+#sec3-2 a:hover {text-decoration: none;}
+
+#sec3-2 .term {font-size: 14px; margin-bottom: 2em;}
+#sec3-2 .term p:first-child{font-weight: 700; }
+
+
+@media screen and (max-width: 767px) {
+	#sec3-2 {padding:10% 3%;}
+	#sec3-2 h2 {font-size: 20px; margin-bottom: 2em;}
+}
+
+@media screen and (min-width:768px) and ( max-width:1119px) {
+	#sec3-2 {padding:10% 3%;}
+}

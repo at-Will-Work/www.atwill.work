@@ -1,0 +1,154 @@
+/* font
+===================================*/
+/* fonts */
+
+h1, h2, h3,h4,h5, nav a, .button, .label, input[type="submit"], small, a  {font-family: "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , 'Noto Sans Japanese', "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;/* font-weight: 500;*/}
+p, dt,dd,li, th, td, input, select,figcaption, .bold, div, address  {font-family: "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , 'Noto Sans Japanese', "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif; /*font-weight: 500;*/}
+span {font-family: inherit;}
+
+.noto {font-family: 'Noto Sans Japanese', "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;font-kerning: auto;}
+
+
+/* layout
+===================================*/
+body {text-align: center; background: #FFF !important;}
+.container {width: 980px; margin:0 auto; text-align: left;}
+
+p {color: #333; font-size: 14px; line-height: 1.8em; margin:0 0 1em;}
+li {color: #333;}
+a, a img, input{-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all  0.2s ease;  }
+a img:hover, .btn-small:hover, .btn-apply:hover {opacity: 0.9;}
+a {color: inherit; text-decoration: none; font:inherit;}
+a:hover {text-decoration: none;}
+hr.spacer {border:none;}
+
+.container a img {background: rgba(255,255,255,.001);}
+.sp {display: none;}
+
+/* button */
+
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+.container {width: 100%; padding:0; overflow: hidden;}
+img {max-width: 100%; height: auto;}
+}
+
+@media screen and (max-width: 768px) {
+body {padding:0;}
+.container {width: 100%; padding:0; }
+img {max-width: 100%; height: auto;}
+p {font-size: 13px; line-height: 1.5em;}
+
+.sp {display: block;}
+.pc {display: none;}
+
+}
+
+/* header
+===================================*/
+body {padding-top: 78px;}
+header {padding:20px 0;position: fixed; top: 0; left: 0; width: 100%; border-bottom: 3px solid #ff2500; background: rgba(255,255,255,0.9); z-index: 100;transition: all  0.2s ease; }
+header .container {display: flex; justify-content: space-between; align-items: center;}
+header .container a {font-size: 13px; font-weight: 700; font-family: inherit; display: flex; align-items: center;}
+header .container a:before {content: ""; /*border:3px solid #ff2500; */height: 15px; width: 15px; box-shadow: 0 0 0 3px #ff2500 inset; display: inline-block; margin-right: 5px;transition: all  0.5s ease;}
+header .container a:hover:before { background: #ff2500;}
+
+/* logo */
+header .container a.logo {padding-right: 2em;}
+header .container a.logo:before{content: none;}
+
+/* tracking */
+header.fixed {padding:10px 0;}
+
+
+@media screen and (max-width: 768px) {
+	body {padding-top: 65px; }
+	header {padding:3% 5%; width: 90%;}
+	header .container {display: none;}
+
+	/* tracking */
+	header.fixed {padding:2% 5%;}
+}
+
+/* footer
+===================================*/
+footer {background: #ff2500; color: #FFF; font-size: 12px; text-align: center; padding:10px 0;}
+
+
+
+
+@media screen and (min-width: 770px) {
+	.drawer--left .drawer-hamburger {display: none;}
+}
+
+/* nav */
+header.fixed {z-index: 97; width: 100%}
+.drawer--left .drawer-hamburger {right:0 !important; left: auto !important; top:-2px; z-index: 1002; width: 1.7rem !important;}
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {height: 4px !important;}
+
+.drawer-nav {background-color: #E6081F !important; z-index: 1003 !important;}
+.drawer-nav aside {padding:3% 0; }
+.drawer-nav a {display: block; padding:0.8em; color: #FFF; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,0.5); font-size: 13px; text-align: left;}
+
+
+/*******************************************
+pagination
+*******************************************/
+.pagination {text-align: center; margin-bottom: 70px;}
+.pagination li {display: inline-table; margin: 0 5px; vertical-align: middle;}
+.pagination li a {font-size: 12px; font-weight: 700; color: #FFF; text-decoration:underline;display: table-cell; width: 40px; height: 40px; background: #ff2500; vertical-align: middle; border-radius: 4px;}
+.pagination li a:hover {color: #FFF; background: #666;}
+.pagination li.onpage a {color: #FFF; background: #666; text-decoration:none;}
+
+.pagination li.prev a, .pagination li.next a {width: auto; height: 100%; line-height: 1em; margin:0 1em; background: none; display: inline-block;color: #000;}
+.pagination li.prev a:hover, .pagination li.next a:hover {color: #000; text-decoration: none;}
+
+@media screen and (max-width: 768px) {
+.pagination {width: 100%;}
+.pagination li {display: none;}
+.pagination li.prev, .pagination li.next {display: inline-block; width: 40%;margin:0 0.5em;}
+.pagination li.prev a, .pagination li.next a {display: block; width: 100%; padding: 1.5em 0; background: #ff2500; color: #FFF; border-radius: 1px; margin:0;}
+
+}
+
+
+/*******************************************
+OPTIONAL
+*******************************************/
+/* label color */
+.label.green {background: #6bb3b3 !important;}
+.label.red {background: #b34b4b !important;}
+.label.blue {background: #5986b3 !important;}
+
+/* shadow */
+.shadow{box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.2)}
+
+/* size */
+.full-width {width: 100%;}
+
+/* text */
+.center {text-align: center !important;}
+.bold {font-weight:bold;}
+.underline {text-decoration: underline;}
+.red {color:#CC0000}
+
+/* font size */
+.q12 {font-size:12px !important;}
+.q14 {font-size:14px !important;}
+.q18 {font-size:18px !important;}
+.q26 {font-size:26px !important;}
+.q36 {font-size:36px !important;}
+
+
+/* clearfix */
+.clear {clear:both;}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7*/

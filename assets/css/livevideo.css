@@ -1,0 +1,226 @@
+.livevideo-container {
+  padding: 5em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.livevideo-container h1 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 0;
+}
+.livevideo-container h2 {
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.livevideo-container .lead {
+  font-size: 16px;
+  margin-top: 12px;
+}
+#livevideo-header {
+  margin-bottom: 48px;
+}
+.livelink p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 24px !important;
+}
+.livelink a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.livelink a:hover {
+  color: #000;
+}
+.livebutton {
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.livebutton a {
+  display: inline-block;
+  background-color: #ff2500;
+  color: #FFF;
+  line-height: 1;
+  padding: 12px 24px 14px;
+  border-radius: 5px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.livebutton a span, .livebutton a small {
+  display: inline-block;
+  vertical-align: middle;
+}
+.livebutton a small {
+  font-size: 12px;
+}
+.video-container {
+  margin-bottom: 64px;
+}
+.video-container h2 {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 16px !important;
+}
+.multi-video-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.multi-video-container.column {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.multi-video-container .youtube-container {
+  flex-basis: 49%;
+}
+.multi-video-container.column .youtube-container:nth-of-type(odd) {
+  margin-right: 2%;
+}
+.multi-video-container .youtube-container h2 {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.multi-video-container.column .youtube-container h2 {
+  font-size: 18px;
+}
+.youtube p {
+  display: none;
+}
+.archive-lead {
+  font-size: 21px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.5;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .livevideo-container {
+    text-align: left;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 30px 15px;
+  }
+  .livevideo-container h1 {
+    font-size: 14px;
+  }
+  .livevideo-container h2 {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  .livevideo-container .lead {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  .livelink p {
+    font-size: 14px;
+    margin-bottom: 24px !important;
+  }
+  .livebutton a {
+    display: block;
+    padding: 10px 22px 14px;
+    font-size: 16px;
+  }
+  .video-container {
+    margin-bottom: 32px;
+  }
+  .video-container h2 {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 8px !important;
+  }
+  .multi-video-container {
+    display: block;
+  }
+  .multi-video-container .youtube-container:first-of-type {
+    margin-bottom: 30px;
+  }
+  .multi-video-container .youtube-container h2 {
+    margin-bottom: 10px;
+  }
+  .multi-video-container.column .youtube-container:nth-of-type(odd) {
+    margin-right: 0;
+  }
+  .archive-lead {
+    font-size: 18px;
+    text-align: left;
+  }
+  .archive-lead br {
+    display: none;
+  }
+}
+
+.point {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  text-align: left;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.point.nomagin {
+  padding-bottom: 32px;
+}
+.point h2 {
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.point p {
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+.point b,
+.point strong {
+  font-weight: bold;
+  color: #000;
+}
+.point a {
+  color: #ff2500;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .point {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .point h2 {
+    font-size: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  .point p {
+    font-size: 10px;
+  }
+}
+
+.vimeo {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.vimeo iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.vimeo p {
+  display: none !important;
+}
