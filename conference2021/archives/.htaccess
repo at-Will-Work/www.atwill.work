@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /var/www/html/www/conference2021/livevideo/.htpasswd
+require valid-user
